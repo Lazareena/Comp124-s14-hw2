@@ -1,6 +1,8 @@
 Comp 124: Homework 2
 ====
 
+These assignments were developed by Paul Cantrell for Comp 124 and are reused with his permission. Thanks, Paul!
+
 General tips for programming assignments:
 
 - **Build up your answer in small, testable steps.** Don't just start at the top and work all the way to the bottom before you try running it. Build up your answer a little bit at a time, and test it at each step to make sure it's doing what you think it should. Do a git commit every time you have a new step working.
@@ -10,8 +12,6 @@ General tips for programming assignments:
 - **Ask your instructor & preceptor for help.** Our office hours are your time to use. You have our contact info. Bring questions! Bring confusions! Bring your completed or uncompleted work to get feedback! I am a resource for you, so use that resource. Same goes for Nick.
 
 General ethics reminder: I encourage you to discuss the problems and give each other tips, but **looking at someone else's code is cheating.**
-
-Acknowledgement: These assignments were developed by Paul Cantrell.
 
 Problem 1: Number Guessing Game
 ---
