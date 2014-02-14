@@ -3,31 +3,48 @@ package edu.macalester.comp124;
 
 public class CollatzIterator {
     
-    public int recordSettingSeed(int max) {
-        int record = 0, recordSeed = 1, seed, iters, x;
-        seed = 1;
-        while(seed < max || seed == max) {
-            iters = 0;
-            x = seed;
-            while((x == 1) == false) {
-                int newx = x;
-                if(x % 2 == 0) {    // x even
-                    newx = x / 2;
+
+    public int recordSettingSeed(int max){  //could not figure out this method
+
+        for(int seed = 1; seed <= max; seed++){
+                int recordlength = 0;
+                 int length = sequenceLength(seed);
+
+            if (length > recordlength){
+                recordlength = length;
+                int recordseed = seed;
                 }
-                if(x % 2 != 0) {  // x odd
-                    newx = 3 * x + 1;
+
                 }
-                x = newx;
-                iters = iters + 1;
-                if(x == 1)
+
+            }
+
+    int iters = 0;
+            public int sequenceLength(int seed) {
+
+                while(true){
+               int newseed= iterate(seed);
+                 iters++;
+                if(newseed == 1){
                     break;
+                }
+                }
+                  return iters;
+
+
             }
-            if(iters > record) {
-                record = iters;
-                recordSeed = seed;
+
+
+        private int iterate(int x){
+
+                if(x % 2 == 0) {    // x even
+                   return x / 2;
+                }
+                else if(x % 2 != 0) {  // x odd
+                   return 3 * x + 1;
+                }
+            return x;
             }
-            seed++;
-        }
-        return recordSeed;
-    }
+
+
 }
